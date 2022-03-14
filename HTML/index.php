@@ -199,12 +199,6 @@
 <br>
 <br>
 
-
-
-
-
-
-
 <div class="contact">
   <div class="con">
     <h4>Contact Us</h4>
