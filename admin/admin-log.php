@@ -16,7 +16,7 @@ include("../HTML/connection.php");
     <div class="login">
         <h1>ADMIN <br> Login</h1>
         <br>
-        <p>Created By Group 12.</p>
+        <p>Created By Group 9.</p>
     <br>
     <br>
     <form action=""method="POST">

@@ -116,7 +116,7 @@
 </div>
 <div class="container">
   <footer>
-    <small><img src="https://img.icons8.com/ios-glyphs/30/000000/email.png"/>All right reserved. Created by Group 12.</small>
+    <small><img src="https://img.icons8.com/ios-glyphs/30/000000/email.png"/>All right reserved. Created by Group 9.</small>
 </footer>
 </div>
 </div>
