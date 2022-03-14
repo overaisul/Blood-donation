@@ -1,8 +1,6 @@
 <?php
 include("../HTML/connection.php");
-
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,8 +13,6 @@ include("../HTML/connection.php");
     <link rel="stylesheet" href="../CSS/style.css">
 </head>
 <body>  
-
-
 
     <nav class="navbar">
         <div class="container">
@@ -66,13 +62,10 @@ include("../HTML/connection.php");
     <tr>
         <td colspan="2">
             <input type="submit" name="submit" value="Add Admin" class="btn">
-
         </td>
     </tr>
-                    
-                    
+                           
  </tr>
-
 </table>
 </div>
 </form>
@@ -85,8 +78,14 @@ if(isset($_POST['submit'])){
   $password=$_POST['password'];
   $phone_no=$_POST['phone_no'];
   $address=$_POST['address'];
-  $sql="INSERT INTO `admin`(`id`, `name`, `password`, `phone_no`, `address`) VALUES ('','$name','$password','$phone_no','$address')";
-  $res=mysqli_query($con,$sql)or die(mysqli_error());
+
+  $sql22="select max(id) as serial_no from admin";
+  if($res22=mysqli_query($con,$sql22)){
+      $row=mysqli_fetch_assoc($res22);
+      $sno=$row['serial_no']+1;
+  }
+  $sql="INSERT INTO `admin`(`id`, `name`, `password`, `phone_no`, `address`) VALUES ('$sno','$name','$password','$phone_no','$address')";
+  $res=mysqli_query($con,$sql);
   header('location: admin.php');
 }
 
