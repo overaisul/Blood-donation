@@ -29,7 +29,7 @@
                         <a class="nav-link" href="search.php">Search Donor</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="register.php">Register</a>
+                        <a class="nav-link" href="Form.php">Register</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="../admin/admin-log.php">Admin login</a>
@@ -116,7 +116,7 @@
 </div>
 <div class="container">
   <footer>
-    <small><img src="https://img.icons8.com/ios-glyphs/30/000000/email.png"/>All right reserved. Created by Group 12.</small>
+    <small><img src="https://img.icons8.com/ios-glyphs/30/000000/email.png"/>All right reserved. Created by Group 9.</small>
 </footer>
 </div>
 </div>

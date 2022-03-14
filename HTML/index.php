@@ -35,7 +35,7 @@
                         <a class="nav-link" href="search.php">Search Donor</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="register.php">Register</a>
+                        <a class="nav-link" href="Form.php">Register</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="../admin/admin-log.php">Admin login</a>
@@ -115,6 +115,11 @@
     </div></a>
   </div>
 </div>
+
+
+
+
+
 <center>
   <div class="member">
   <h4>Members</h4></div>
@@ -194,6 +199,12 @@
 <br>
 <br>
 
+
+
+
+
+
+
 <div class="contact">
   <div class="con">
     <h4>Contact Us</h4>
@@ -241,12 +252,16 @@
 </div>
 <div class="container">
   <footer>
-    <small><img src="https://img.icons8.com/ios-glyphs/30/000000/email.png"/>All right reserved. Created by Group 12.</small>
+    <small><img src="https://img.icons8.com/ios-glyphs/30/000000/email.png"/>All right reserved. Created by Group 9.</small>
 </footer>
 </div>
 </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
-
+<!-- <script Type="text/javascript">
+  if(window.history.replaceState){
+    window.history.replacement(null,null,window.location.href);
+  }
+</script> -->
 
 
 
