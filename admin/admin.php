@@ -42,7 +42,7 @@ include("../HTML/connection.php");
          </div>
         </nav>
 
-<div class="home">
+<div class="home blood">
   <div class="container">
     <h1>Welcome to Admin Panel</h1>
   </div>
