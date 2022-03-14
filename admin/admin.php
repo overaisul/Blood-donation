@@ -30,7 +30,7 @@ include("../HTML/connection.php");
                       <a class="nav-link" href="admin.php">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="add_admin.php">Include Admin</a>
+                      <a class="nav-link" href="add_admin.php">Admin Include</a>
                     </li>
                       <li class="nav-item">
                         <a class="nav-link" href="donor.php">Donor List</a>
