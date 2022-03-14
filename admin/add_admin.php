@@ -29,7 +29,7 @@ include("../HTML/connection.php");
                       <a class="nav-link" href="admin.php">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="add_admin.php">Add Admin</a>
+                      <a class="nav-link" href="add_admin.php">Admin Include</a>
                     </li>
                       <li class="nav-item">
                         <a class="nav-link" href="donor.php">Donor List</a>
@@ -57,11 +57,11 @@ include("../HTML/connection.php");
        <td> <input type="password" name="password"placeholder="Enter Password"></td>
     <tr>
         <td>Phone No:</td>
-        <td><input type="text"name="phone_no" placeholder="Enter your Number"></td>
+        <td><input type="text"name="phone_no" placeholder="Enter Your Phone Number"></td>
     </tr>
     <tr>
         <td>Address :</td>
-        <td><input type="text"name="address" placeholder="Enter your Address"></td>
+        <td><input type="text"name="address" placeholder="Enter Your Address"></td>
     </tr>
     <tr>
         <td colspan="2">
