@@ -27,7 +27,7 @@ include("../HTML/connection.php");
         Password :
         <input type="password"name="password"placeholder="Enter password">
         <br>
-        <input type="submit"name="submit"value="Enter"class="btn">
+        <input type="Submit"name="submit"value="Enter"class="btn">
     </form>
 </div>
 <br>
