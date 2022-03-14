@@ -115,11 +115,6 @@
     </div></a>
   </div>
 </div>
-
-
-
-
-
 <center>
   <div class="member">
   <h4>Members</h4></div>
