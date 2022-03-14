@@ -50,7 +50,7 @@ if(isset($_POST['submit'])){
         header('location: admin.php');
 
     }else{
-        $_SESSION['admin-log']="<div class='error'>Wrong password or username. </div>";
+        $_SESSION['admin-log']="<div class='error'>Invalid password or username. </div>";
         header('location: admin-log.php');
     }
 }
