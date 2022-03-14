@@ -4,8 +4,7 @@ session_start();
 include("connection.php");
 ?>
 
-
-        <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,7 +15,7 @@ include("connection.php");
     <link rel="stylesheet" href="../CSS/style.css">
 </head>
 <html>
-<body bgcolor="white">
+<body bg color="white">
 <title>Blood Bank System</title>
 <nav class="navbar">
         <div class="container">
@@ -40,7 +39,7 @@ include("connection.php");
                         <a class="nav-link" href="register.php">Register</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="admin-log.php">Admin login</a>
+                        <a class="nav-link" href="../admin/admin.php">Admin login</a>
                       </li>
                   </ul>
          </div>
@@ -48,13 +47,20 @@ include("connection.php");
 <center>
 <form action=""method="POST">
 <table>
+<div class="form">
+        <ul>
+        <li>
+            <h3>Search Donor.</h3>
+        </li>
+</ul>
  <tr>
-                    <td><font size="6">District:</font></td>
+                    <td><font size="5">District:</font></td>
                     <td><select name="city">
+                                <option >None</option>
                                 <option>Chittagong</option>
                                 <option>Dhaka</option>
                                 <option>Khulna</option>
-                                <option>Syhlet</option>
+                                <option>Sylhet</option>
                                 <option>Rajshahi</option>
                                 <option>Rangpur</option>
                                 <option>Mymensingh</option>
@@ -62,7 +68,7 @@ include("connection.php");
                 </tr>
 				
                 <tr>
-                    <td><font size="6">Blood Group:</font></td>
+                    <td><font size="5">Blood Group:</font></td>
                     <td><select name="bgroup">
                                 <option>O+</option>
                                 <option>A+</option>
@@ -75,23 +81,16 @@ include("connection.php");
                         </select></td>
                 </tr>
 
-                <tr>
-                    <td><font size="6">Date of Blood Donation:</font></td>
-                    <td>
-                        <input type="text" id="date" name="Date" value="dd/mm//yyyy"><br>
-                    </td>
-                </tr>
-
 				<tr>
                     <td></td>
-                    <td><input type="submit" value="Search" name="submit"/></td>
+                    <td><input type="submit" value="Search" name="submit" class="btn"></td>
                     
                 </tr>
+</div>
 
 </table>
 </form>
 </center>
-</body>
 
 <?php
  if(isset($_POST['submit'])){ 
@@ -120,12 +119,34 @@ $sql="SELECT * FROM `register` WHERE Address='$add' and Blood_type='$bgrp'";
                                             <div class="card h-100">
                                                 
                                                 <div class="card-body">
-                                                    <h5 class="card-title"><?php echo $name;?></h5>
-                                                    <p><?php echo $Address;?></p>
-                                                    <h5><?php echo $Blood_type;?></h5>
-                                                    
-                                            </div>
-                                        </div>
+                                                  <div class="row">
+                                                    <div class="col-md-6">
+                                                      <div class="row">
+                                                        <div class="col-md-3">
+                                                        <img src="../image/people.webp" alt=""height=170 width=170>
+                                                        </div>
+                                                        <div class="col-md-9">
+                                                        <h6 class="card-title">Name : <?php echo $name;?></h4>
+                                                      
+                                                      <h6>Address : <?php echo $Address;?></p>
+                      
+                                                      <h6>Blood Type: <?php echo $Blood_type;?></h5>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                          
+                                                    </div>
+                                                  </div>
+                                               </div>
+
+
+
+
+
+
+
+
 
            <?php
           }
@@ -176,22 +197,23 @@ $sql="SELECT * FROM `register` WHERE Address='$add' and Blood_type='$bgrp'";
       </div>
       </div>
     <div class="col-md-6">
-      <div class="form">
-      <input type="text"placeholder="Name"required="required">
-      </div>
-      <div class="form">
-        <input type="text"placeholder="Email"required="required">
-      </div>
-      <div class="form">
-          <input type="text"placeholder="Phone"required="required">
-      </div>
-      <div class="form">
-           <textarea name="" id="" cols="23" rows="3"placeholder="Message"></textarea>
-      </div>
-      <div class="form">
-        <button class="btn1 btn-dark" type="button">Send</button>
-      </div>
-  </div>
+    <form action="https://formspree.io/f/mqknlkpa"method="POST">
+    <div class="form">
+        <ul>
+            <li>
+                <input type="text" name="name"placeholder="name"><br></li>
+        <li>
+              <input type="text" name="email"placeholder="Email"><br>
+        </li>
+        <li>
+             <input type="text" name="phone"placeholder="Phone No"><br>
+        </li>
+       <li> <textarea name="message"cols="23"rows="3"></textarea></li>
+       <li>
+       <input class="btn1 btn-dark" type="submit"name="submit"value="Submit">
+       </li>    
+    </div>
+    </form>
     </div>
   </div>
 </div>
